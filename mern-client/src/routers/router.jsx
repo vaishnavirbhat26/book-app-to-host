@@ -39,7 +39,9 @@ import EditBooks from "../pages/CrudBooks/EditBooks.jsx";
         {
           path:'manage-books/edit/:id',
           element:<EditBooks/>,
-          loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)
+          /*loader: ({params}) => fetch(`http://localhost:5000/book/${params.id}`)*/
+            loader: ({params}) => fetch(`https://book-app-api-lime.vercel.app/book/${params.id}`)
+            
         }
       ]
     },
