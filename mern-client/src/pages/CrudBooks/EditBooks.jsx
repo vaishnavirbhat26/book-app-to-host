@@ -24,7 +24,7 @@ const EditBooks = () => {
         //console.log(updateBookObj)
 
         //update book data
-        fetch(`http://localhost:5000/book/${id}`, 
+        fetch(`https://book-app-api-lime.vercel.app/book/${id}`, 
         {
             method:"PATCH",
             headers:{
