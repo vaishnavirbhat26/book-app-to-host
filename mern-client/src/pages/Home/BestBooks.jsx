@@ -5,7 +5,7 @@ const BestBooks = () => {
     const [books, setBooks] = useState([]);
 
     useEffect( () => {
-        fetch("http://localhost:5000/first-3-books").then(res => res.json()).then(data => setBooks(data));
+        fetch("https://book-app-api-lime.vercel.app/first-3-books").then(res => res.json()).then(data => setBooks(data));
     },[])
 
   return (
