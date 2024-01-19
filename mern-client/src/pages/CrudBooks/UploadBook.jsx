@@ -20,7 +20,7 @@
       //console.log(bookObj)
 
       //send data to database
-      fetch("http://localhost:5000/upload-book-data",
+      fetch("https://book-app-api-lime.vercel.app/upload-book-data",
       {
         method: "POST",
         headers: {
