@@ -6,7 +6,7 @@ const cors = require('cors')
 //middleware
 app.use(cors(
     {
-        origin: [],
+        origin: ["https://book-app-to-host.vercel.app"],
         methods: ["POST", "GET", "PATCH"],
         credentials: true
     }
